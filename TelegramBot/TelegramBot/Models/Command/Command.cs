@@ -1,7 +1,7 @@
 ﻿using Telegram.Bot.Types;
 using Telegram.Bot;
 
-namespace TelegramBot.Models.Command
+namespace TelegramBot.Models.Commands
 {
     public abstract class Command
     {
@@ -9,9 +9,10 @@ namespace TelegramBot.Models.Command
 
         public abstract void Execute(Message message, TelegramBotClient client);
 
-        public bool Contains(string comand)
+        public bool Contains(string command)
         {
-            return comand.Contains(this.Name) && comand.Contains(AppSettings.Name);
+            //will check the command and bot name so as not to be confused with another
+            return command.Contains(this.Name) && command.Contains(AppSettings.Name);
         }
     }
 }

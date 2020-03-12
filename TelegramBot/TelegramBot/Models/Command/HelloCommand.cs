@@ -5,7 +5,7 @@ using System.Web;
 using Telegram.Bot;
 using Telegram.Bot.Types;
 
-namespace TelegramBot.Models.Command
+namespace TelegramBot.Models.Commands
 {
     public class HelloCommand : Command
     {
