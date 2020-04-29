@@ -6,7 +6,7 @@ using TelegramBot.Models.Commands;
 
 namespace TelegramBot.Models
 {
-    public class Bot
+    public static class Bot
     {
         private static TelegramBotClient client;
         private static List<Command> commandsList;
